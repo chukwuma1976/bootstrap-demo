@@ -1,0 +1,48 @@
+div.col {
+    background-color: lightblue;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid purple;
+}
+
+div.col-12 {
+    background-color: lightskyblue;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid purple;
+}
+
+div.col-6 {
+    background-color: lightcyan;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid darkblue;
+}
+
+div.col-4 {
+    background-color: lightslategray;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid darkgray;
+}
+
+div.col-3 {
+    background-color: lightgoldenrodyellow;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid darkgoldenrod;
+}
+
+div.col-2 {
+    background-color: lightcoral;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid red;
+}
+
+div.col-1 {
+    background-color: lightsalmon;
+    height: 50px;
+    font-weight: bold;
+    border: 1px solid darkred;
+}
