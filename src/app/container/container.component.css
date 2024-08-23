@@ -46,3 +46,12 @@ div.col-1 {
     font-weight: bold;
     border: 1px solid darkred;
 }
+
+h1 {
+    color: darkblue;
+    margin-top: 60px;
+}
+
+h2 {
+    margin-top: 40px;
+}

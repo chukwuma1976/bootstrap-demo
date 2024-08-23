@@ -1,12 +1,9 @@
-button {
-    margin: 2px;
-}
-
-h1 {
+h1.header {
     color: darkblue;
     margin-top: 60px;
 }
 
-h2 {
+h2.header {
     margin-top: 40px;
+    color: blue;
 }
