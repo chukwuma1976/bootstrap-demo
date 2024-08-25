@@ -1,0 +1,14 @@
+h1 {
+    color: darkblue;
+    margin-top: 60px;
+    text-align: center;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 650px;
+}
+
+li {
+    font-size: larger;
+}

@@ -9,6 +9,7 @@ import { FormsComponent } from './forms/forms.component';
 import { TablesComponent } from './tables/tables.component';
 import { FlexComponent } from './flex/flex.component';
 import { PopupComponent } from './popup/popup.component';
+import { NavsComponent } from './navs/navs.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,5 +22,6 @@ export const routes: Routes = [
     { path: 'forms', component: FormsComponent },
     { path: 'tables', component: TablesComponent },
     { path: 'flex', component: FlexComponent },
-    { path: 'popup', component: PopupComponent }
+    { path: 'popup', component: PopupComponent },
+    { path: 'navs', component: NavsComponent }
 ];
