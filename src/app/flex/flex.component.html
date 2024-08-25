@@ -1,0 +1,88 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 scroll">
+            <div>
+                <p class="fw-bold" for="table-classes">Choose a flex direction class</p>
+                <div class="form-check" *ngFor="let flexDirection of flexDirections"
+                    (click)="setFlexDirection(flexDirection)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{flexDirection}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose a justify content class</p>
+                <div class="form-check" *ngFor="let justifyContent of justifyContentArray"
+                    (click)="setJustifyContent(justifyContent)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{justifyContent}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose a align items class</p>
+                <div class="form-check" *ngFor="let element of alignmentArray" (click)="setAlignment(element)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{element}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose a wrap</p>
+                <div class="form-check" *ngFor="let element of alignSelfArray" (click)="setAlignSelf(element)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{element}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose a align items class</p>
+                <div class="form-check" *ngFor="let element of wrapArray" (click)="setWrap(element)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{element}}
+                    </label>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div>
+                <h1>Flex</h1>
+                <h2>Flex Direction</h2>
+                <div [class]="direction + ' dir'">
+                    <div class="p-2">Flex item 1</div>
+                    <div class="p-2">Flex item 2</div>
+                    <div class="p-2">Flex item 3</div>
+                    <div class="p-2">Flex item 4</div>
+                    <div class="p-2">Flex item 5</div>
+                    <div class="p-2">Flex item 6</div>
+                </div>
+                <h2>Justify Content</h2>
+                <div [class]="justifyContent + ' dir'">
+                    <div class="p-2">Justify Content 1</div>
+                    <div class="p-2">Justify Content 2</div>
+                    <div class="p-2">Justify Content 3</div>
+                </div>
+                <h2>Align Items</h2>
+                <div [class]="alignment + ' align'">
+                    <div class="p-2">Flex Item 1</div>
+                    <div class="p-2">Flex Item 2</div>
+                    <div class="p-2">Flex Item 3</div>
+                </div>
+                <h2>Align self</h2>
+                <div class="d-flex align-items-start align">
+                    <div class="p-2">Flex Item 1</div>
+                    <div [class]="alignSelf + ' p-2'">Aligned flex item</div>
+                    <div class="p-2">Flex Item 3</div>
+                </div>
+                <h2>Wrap</h2>
+                <div class="dir">
+                    <div [class]="wrap">
+                        <div class="col-3 p-2">Flex Item 1</div>
+                        <div class="col-3 p-2">Flex Item 2</div>
+                        <div class="col-3 p-2">Flex Item 3</div>
+                        <div class="col-3 p-2">Flex Item 4</div>
+                        <div class="col-3 p-2">Flex Item 5</div>
+                        <div class="col-3 p-2">Flex Item 6</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

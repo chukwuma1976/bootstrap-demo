@@ -1,0 +1,38 @@
+h1 {
+    color: darkblue;
+    margin-top: 60px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+}
+
+h2 {
+    text-align: center;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 650px;
+    margin-top: 60px;
+}
+
+div.p-2 {
+    background-color: aliceblue;
+    border: 1px solid darkblue;
+    height: 40px;
+}
+
+.dir {
+    background-color: antiquewhite;
+}
+
+.align {
+    background-color: antiquewhite;
+    height: 100px;
+}
+
+p {
+    margin-top: 20px;
+}

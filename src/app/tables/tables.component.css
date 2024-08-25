@@ -1,0 +1,34 @@
+h1 {
+    color: darkblue;
+    margin-top: 60px;
+    text-align: center;
+}
+
+h2 {
+    margin-top: 40px;
+    text-align: center;
+    color: purple;
+}
+
+h3 {
+    margin-top: 30px;
+    text-align: center;
+}
+
+h4 {
+    margin-top: 20px;
+}
+
+p {
+    margin-top: 20px;
+}
+
+.scroll {
+    overflow-y: auto;
+    max-height: 650px;
+    margin-top: 40px;
+}
+
+button {
+    margin-left: 50px;
+}

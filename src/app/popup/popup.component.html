@@ -1,0 +1,17 @@
+<h1>Popups</h1>
+<div class="container">
+    <ng-template #content let-c="close" let-d="dismiss">
+        <div class="modal-header bg-info">
+            <h4 class="modal-title" id="modal-basic-title">Hi there!</h4>
+            <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button>
+        </div>
+        <div class="modal-body bg-light">
+            <p>Hello, World! I am a popup modal using Angular version of bootstrap</p>
+        </div>
+        <div class="modal-footer">
+            <button type="button" class="btn btn-outline-secondary" (click)="c('Save click')">Save</button>
+        </div>
+    </ng-template>
+
+    <button class="btn btn-lg btn-primary" (click)="open(content)">Launch demo modal</button>
+</div>

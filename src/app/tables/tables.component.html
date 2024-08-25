@@ -1,0 +1,82 @@
+<div class="container">
+    <div class="row">
+        <div class="col-4 scroll">
+            <div>
+                <p class="fw-bold" for="table-classes">Choose a bootstrap table class</p>
+                <div class="form-check" *ngFor="let tableClass of tableClasses" (click)="setClass(tableClass)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{tableClass}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose a table head class</p>
+                <div class="form-check" *ngFor="let tableHeadClass of tableHeadClasses"
+                    (click)="setTableHeadClass(tableHeadClass)">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                        {{tableHeadClass === '' ? 'none' : tableHeadClasses}}
+                    </label>
+                </div>
+                <p class="fw-bold" for="table-classes">Choose element to display</p>
+                <div class="form-check" (click)="setDisplayFooter()">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault">
+                    <label class="form-check-label for=flexRadioDefault1">Footer</label>
+                </div>
+                <div class="form-check" (click)="setDisplayCaption()">
+                    <input class="form-check-input" type="checkbox" name="flexRadioDefault" id="flexCheckDefault">
+                    <label class="form-check-label for=flexRadioDefault1">Caption</label>
+                </div>
+                <div>
+                    <button class="btn btn-outline-primary btn-sm" *ngIf="displayCaption"
+                        (click)="toggleDisplayCaption()">
+                        {{positionCaptionOnTop ? "Display on Bottom" : "Display on Top"}}
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col-8">
+            <div>
+                <h1>Tables</h1>
+                <h2>Table using class "{{currentClass}}"</h2>
+                <table [class]="currentClass">
+                    <caption [class]="positionCaptionOnTop ? 'table caption-top' : ''" *ngIf="displayCaption">List of
+                        users
+                    </caption>
+                    <thead [class]="currentHead">
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">First</th>
+                            <th scope="col">Last</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-group-divider">
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>Mark</td>
+                            <td>Otto</td>
+                            <td>&#64;mdo</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>Jacob</td>
+                            <td>Thornton</td>
+                            <td>&#64;fat</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td colspan="2">Larry the Bird</td>
+                            <td>&#64;twitter</td>
+                        </tr>
+                    </tbody>
+                    <tfoot class="bg-info" *ngIf="displayFooter">
+                        <td>Ft</td>
+                        <td>Footer</td>
+                        <td>Footer</td>
+                        <td>&#64;Footer</td>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
